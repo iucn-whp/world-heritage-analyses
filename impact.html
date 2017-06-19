@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>World Heritage Knowledge Lab</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:400,700" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    p,
+    a {
+        font-family: 'Open Sans', sans-serif;
+        ;
+        font-weight: 300;
+    }
+    /*header background*/
+    
+    .prototypes {
+        background-color: #f4f7fb;
+        padding-top: 50px;
+    }
+    
+    .prototypes h2 {
+        padding: 0 0 30px 0;
+    }
+    
+    .prototypes-item {
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        color: black;
+    }
+    
+    .prototypes a:hover {
+        text-decoration: none;
+    }
+    
+    .img-landcover {
+        background: linear-gradient( 90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url("img/wh/thumb - 1.jpg");
+        background-size: cover;
+    }
+    
+    header {
+        /*height: 100%;*/
+        padding-bottom: 40px;
+    }
+    
+    .landing {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /*justify-content: center;*/
+    }
+    
+    .landing p,
+    .landing h1 {
+        max-width: 80%;
+        /*margin-left: 5%;*/
+    }
+    
+    .landing h1 {
+        font-size: 9vw;
+        padding-bottom: 5%;
+        letter-spacing: -0.03em;
+        line-height: 0.95
+    }
+    
+    .landing p {
+        font-size: 21px;
+    }
+    
+    strong {
+        font-size: 1.5em;
+    }
+    
+    .img-landcover {
+        background-image: url("img/wh/thumb - 1.jpg");
+    }
+    
+    .img-ccv {
+        background-image: url("img/wh/thumb - 2.jpg");
+    }
+    
+    .img-landsat {
+        background-image: url("img/wh/thumb - 3.jpg");
+    }
+    
+    .img-datasheet {
+        background-image: url("img/wh/thumb - 4.jpg");
+    }
+    
+    .img-wh_data {
+        background-image: url("img/wh/thumb - 5.jpg");
+    }
+    
+    .img-forest {
+        background-image: url("img/wh/thumb - 6.jpg");
+    }
+    
+    .img-whca {
+        background-image: url("img/wh/thumb - 7.jpg");
+    }
+    
+    .jumbotron {
+        margin-bottom: 0px;
+        background-color: transparent;
+    }
+    
+    .info-box {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .info-box h2 {
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    
+    .info-box a {
+        border: 1px solid;
+        line-height: 20px;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: none;
+    }
+    
+    .info-left {}
+    
+    .info-right {
+        float: right;
+        text-align: right;
+    }
+    
+    .info-light {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .info-dark {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .info-light a {}
+    
+    .info-dark a {
+        color: white;
+    }
+
+    
+    .info-section {
+        margin-bottom: 30px;
+    }
+    
+    .info-section h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 44px;
+        padding-bottom: 30px;
+    }
+    /*
+    #contact {
+        background-color: rgba(217, 237, 247, 0.48);
+        margin-bottom: 20px;
+    }
+*/
+    @media (max-width:425px) {
+        .landing p,
+        .landing h1,
+        p.navbar-text {
+            max-width: 100%;
+            text-align: center;
+        }
+        .landing h1 {
+            font-size: 50px;
+            padding-bottom: 5%;
+            letter-spacing: -0.03em;
+            line-height: 0.95
+        }
+        .landing p {
+            font-size: 21px;
+        }
+        .info-section {
+            text-align: center;
+        }
+        .info-box {
+            text-align: center;
+        }
+
+        .prototypes-item {
+            min-height: 150px;
+        }
+    }
+    
+    footer {
+        padding-top: 20px;
+        background-color: #333;
+        color: white;
+    }
+
+
+    #float-background {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -9999;
+        background-position: center;
+        background-size: cover;
+        background-image: url("img/wh/wh - 2.jpg");
+/*        background-attachment: fixed;
+*/    }
+
+    .default-background {
+        background-color: #f4f7fb;
+    }
+    
+    .kl-nav {
+        margin-bottom:0px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id='float-background'></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default kl-nav default-background">
+        <div class="container">
+            <p class="navbar-text">Natural World Heritage Knowledge Lab</p>
+            <!-- <a class="navbar-brand" href="#">Natural World Heritage Knowledge Lab</a> -->
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class='default-background'>
+        <div class="container landing">
+            <h1><strong>Amplify</strong> <br/> the impact of knowledge</h1>
+            <p>Delivering natural World Heritage digital products through the web</p>
+        </div>
+    </header>
+    <!-- about -->
+    <section id='about'>
+        <div class="jumbotron">
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-6 info-box info-right info-dark'>
+                        <h2>Central hub for all things digital </h2>
+                        <p>We believe the future of information dissemination is via the web, the most effective way to pass knowledge to the hands of people who need them.</p>
+                        </p>
+                        <a class="btn btn-default" href="#prototypes" role="button">Find out More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron default-background">
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-12 info-box info-left'>
+                        <h2>Simple, and open
+                        </h2>
+                        <p>We believe the power of simplicity. Only by making knowledge simple to understand can we hope to make them useful. We also believe people should be empowered to make use of the information themselves. This means data, methodology, and result should <strong>all</strong> be open.</p>
+                        <a class="btn btn-default" target='_blank' href="https://github.com/Yichuans/wh-knowledge-lab" role="button">More on Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-6 info-box info-dark info-right'>
+                        <h2>You voice matters</h2>
+                        <p>This is our first attempt for our outputs to go digital by default. Please help us by letting us know your thoughts</p>
+                        <a class="btn btn-default" href="#contact" role="button">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- prototypes -->
+    <section id="prototypes" class='prototypes'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 info-section">
+                    <h2>Prototypes</h2>
+                    <p>All work-in-progress digital knowledge products for natural and mixed World Heritage sites are listed below.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://wh-app.yichuans.me/wh_app/landcover">
+                        <div class="prototypes-item">
+                            <h3>Land cover change</h3>
+                            <p>Land cover conversion matrice, for Natural World Heritage sites, 2000 to 2010
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://forest-loss.yichuans.me/output/">
+                        <div class="prototypes-item">
+                            <h3>Forest loss</h3>
+                            <p>Forest loss aggregate statistics by year, for Natural World Heritage sites, 2000 to 2014
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://human-footprint.yichuans.me/output/">
+                        <div class="prototypes-item">
+                            <h3>Human Footprint</h3>
+                            <p>Natural World Heritage Change statistics, 1993 to 2009
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://wh-app.yichuans.me/ccv">
+                        <div class="prototypes-item">
+                            <h3>Climate change vulnerability</h3>
+                            <p>For Natural World Heritage sites, from the perspective of species climate change vulnerability analysis
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://wh-app.yichuans.me/landsat">
+                        <div class="prototypes-item">
+                            <h3>Near real-time satellite imagery</h3>
+                            <p>Time series Landsat 8 images for visual inspections
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://52.16.74.158/wh_app/default/wh_html_bs2/191">
+                        <div class="prototypes-item">
+                            <h3>Information sheet</h3>
+                            <p>Summary historical information of natural World Heritage sites at the time of inscription, compiled and curated by UNEP-WCMC</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://wcmc.io/3f3e">
+                        <div class="prototypes-item">
+                            <h3>Natural World Heritage boundary</h3>
+                            <p>GIS data and map service</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a target="_blank" href="http://whca.yichuans.me">
+                        <div class="prototypes-item">
+                            <h3>Spatial comparative analysis</h3>
+                            <p>Proof of concept prototype to explore gaps of representation, and compare with exisiting biodiversity World Heritage sites</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section id='contact' class='default-background'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 info-section">
+                    <h2>Get in touch</h2>
+                    <h4>IUCN World Heritage Programme</h4>
+                    <p>Rue Mauverney 28
+                        <br> 1196 Gland
+                        <br> Switzerland
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yichuan.shi@iucn.org">yichuan.shi@iucn.org</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- copy right -->
+    <footer>
+        <section id='copy-right'>
+            <div class='container'>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <p>Natural World Heritage Knowledge Lab
+                            <br/> &copy; International Union for Conservation of Nature 2017</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#" style="color:white">Top</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+</body>
+
+</html>
